@@ -14,10 +14,7 @@
     "mongoose": "^7.5.2",
     "multiparty": "^4.2.3",
     "nodemon": "^3.0.1",
-    "openai": "^4.10.0",
-    "puppeteer": "^21.3.6",
-    "request-promise": "^4.2.6",
-    "uuid": "^9.0.1"
+    "openai": "^4.10.0"
   },
   "name": "learning-node-js",
   "version": "1.0.0",
