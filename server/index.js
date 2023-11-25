@@ -10,7 +10,7 @@ const app=express()
 
 const originsConfigue={
     origin:(origin,callback)=>{
-        if(!origin || origin=='http://localhost:5174'){
+        if(!origin || origin==`http://localhost:${process.env['PORT']}`){
             callback(null,true)
         }
         else{
@@ -37,6 +37,6 @@ mongoose.connection.on('error',()=>{
 
 mongoose.connection.once('open',()=>{
 })
-app.listen(8000,()=>{
+app.listen(process.env['PORT'],()=>{
     console.log('listening')
 })
